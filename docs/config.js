@@ -43,7 +43,7 @@ window.$docsify = {
   subMaxLevel: 2,
   maxLevel: 2,
   auto2top: true,
-  name: " 180天读书计划",
+  name: "我的成长日记",
 
   copy: {
     errorText: "复制失败",
@@ -65,7 +65,7 @@ window.$docsify = {
   sidebarDisplayLevel: 1,
 
   toc: {
-    title: " 180天读书计划"
+    title: "成长日记"
   },
 
   vue: {
