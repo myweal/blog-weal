@@ -37,14 +37,17 @@
 // vueGlobalOptions: {},                        // 指定 Vue选项 ，用于未明确使用vueMounts、vueComponents或markdown脚本挂载的 Vue 内容。对全局data的更改将持续存在，并在任何使用全局引用的地方得到反映。
 // vueMounts: {},                               // 指定要挂载为 Vue实例 的 DOM 元素及其相关选项。挂载元素使用 CSS选择器 作为键，并使用包含 Vue 选项的对象作为其值。每次加载新页面时，Docsify 将挂载主内容区域中第一个匹配的元素。挂载元素data对每个实例来说都是唯一的，并且不会在用户浏览网站时持久存在。
 window.$docsify = {
-  coverpage: true,
+  coverpage: false,
   loadNavbar: true,
   loadSidebar: true,
   subMaxLevel: 2,
   maxLevel: 2,
   auto2top: true,
   name: "我的成长日记",
-
+  alias: {
+    '/.*/_sidebar.md': '/_sidebar.md',
+    '/.*/_navbar.md': '/_navbar.md'
+  },
   copy: {
     errorText: "复制失败",
     successText: "已复制到剪贴板"
