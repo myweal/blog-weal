@@ -10,7 +10,7 @@ NVM是一个版本管理[的node.js](https://nodejs.org/en/)，设计每个用�
 
 ​        应用程序>控制台>右键显示简介>勾选使用Rosetta打开
 
-![截屏2021-08-30 下午9.44.14](/Users/liushanshan/Library/Application Support/typora-user-images/截屏2021-08-30 下午9.44.14.png)
+![截屏2021-08-30 下午9.44.14](../assets/imgs/nvm%20install.png)
 
 3、使用curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
