@@ -54,7 +54,7 @@ alter user 'root'@'localhost' identified with mysql_native_password by 'admin123
 
       解决方案参考：https://www.cnblogs.com/yanlin-10/p/9388911.html
 
-2）没有权限修改文件，终端报错：Can’t open file for writing
+2）没有权限修改文件，终端报错：Can't open file for writing
 
       解决方案参考：https://blog.csdn.net/yangkai_hudong/article/details/30513837
 
@@ -120,13 +120,13 @@ bindingHost: '',   //监听绑定的 Host，默认127.0.0.1，外网访问注释
 
 database: {
 
-        db: ‘cnpmjs’,//数据库名称
+        db: 'cnpmjs',//数据库名称
 
         host: '127.0.0.1',//数据库访问IP，通常127.0.0.1
 
         port: 3306,//数据库访问端口，通常3306
 
-        username: ‘root’,//数据库访问账号
+        username: 'root',//数据库访问账号
 
         password: 'z1x2c3v4' //数据库密码
 
@@ -146,9 +146,9 @@ database: {
 
     },
 
-    dialect: ‘mysql’,//使用数据库，默认sqlite，这里我们改成mysql
+    dialect: 'mysql',//使用数据库，默认sqlite，这里我们改成mysql
 
-syncModel: 'exist',// 'none', 'all', ‘exist'
+syncModel: 'exist',// 'none', 'all', 'exist'
 /**
 模块文件存储，默认将发布的私有模块跟缓存公共模块存储在本地文件系统中，路径~/.cnpmjs.org/nfs ,也就是模块文件都存储在这个目录下；或者可以选择三方储存方式比如七牛等，着这里配置插件；也支持接口开发扩展储存
 */
@@ -279,7 +279,7 @@ Email: (this IS public) (你的邮箱)
 
 准备就绪了，下面简单写一个模块来测试一下：
 
-vi justice.js
+vi hello.js
 /*
 
 * 公共模块
@@ -300,15 +300,15 @@ vi package.json
 
 {
 
-        "name": "justice",
+        "name": "hello",
 
         "version": "1.0.0",
 
-        "main": "./justice.js",
+        "main": "./hello.js",
 
         "description": "A Common Module",
 
-        "author": "justice"
+        "author": "hello"
 
 }
 
@@ -318,7 +318,7 @@ vi package.json
 
 npm publish --registry=http://127.0.0.1:7001
 
-输出：justice@1.0.0
+输出：hello@1.0.0
 
 也可以加上 —verbose参数来查看更详细的日志。
 
@@ -338,7 +338,7 @@ npm ERR! Remove the 'private' field from the package.json to publish it.
 
 解决方法：vim ~/cnpmjs.org/config/index.js
 
-修改：jsonLimit: ‘100mb’,//传输数据大小限制
+修改：jsonLimit: '100mb',//传输数据大小限制
 
  
 
@@ -351,7 +351,7 @@ npm ERR! Remove the 'private' field from the package.json to publish it.
 
 安装测试一下，转到其他目录，输入命令：
 
-npm install justice@lastest --registry=http://127.0.0.1:7001
+npm install hello@lastest --registry=http://127.0.0.1:7001
 
 (没有@lastest默认安装最新，@lastest存在安装指定版本)
 
