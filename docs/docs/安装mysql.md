@@ -5,13 +5,13 @@
 1、[打开官网](https://dev.mysql.com/downloads/mysql/)
 
 2、选择下载的版本，m1是arm架构，选择arm架构的安装包
-![download mysql](../assets/imgs/mysql-download.jpg)
+![download mysql](../assets/imgs/mysql/mysql-download.jpg)
 
 3、直接下载，不登录
-![download mysql](../assets/imgs/mysql-download-2.jpg)
+![download mysql](../assets/imgs/mysql/mysql-download-2.jpg)
 
 4、设置密码(admin123)
-![download mysql](../assets/imgs/mysql-install.jpg)
+![download mysql](../assets/imgs/mysql/mysql-install.jpg)
 
 ## 环境变量配置：
 打开终端，切换到根目录，编辑.bash_profile

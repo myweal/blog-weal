@@ -8,3 +8,7 @@
 
 * 部署
   * [私有npm仓库搭建](./docs/dev/cnpmjs.md)
+
+* linux
+  * [linux常用命令](./docs/linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+  
